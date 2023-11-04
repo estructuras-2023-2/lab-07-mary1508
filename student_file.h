@@ -42,3 +42,5 @@ vector<int> Torneo(vector<int> habilidades, int N, int K) {
 
       return resultado;
   }
+
+  #endif
