@@ -15,3 +15,11 @@ vector<int> Torneo(vector<int> habilidades, int N, int K) {
 
         ganador_victorias_consecutivas++;
         cola.push_back(oponente);
+        
+        if (ganador_victorias_consecutivas == N) {
+            cola.push_back(ganador);
+            ganador_victorias_consecutivas = 0;
+            ganador = cola.front();
+            cola.pop_front();
+        }
+    }
