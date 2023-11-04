@@ -23,3 +23,16 @@ vector<int> Torneo(vector<int> habilidades, int N, int K) {
             cola.pop_front();
         }
     }
+        int oponenteK = cola.front();
+        cola.pop_front();
+        vector<int> resultado;
+        if (ganador > oponenteK) {
+            resultado.push_back(oponenteK);
+            resultado.push_back(ganador);
+        } else {
+            resultado.push_back(ganador);
+            resultado.push_back(oponenteK);
+      }
+
+      return resultado;
+  }
