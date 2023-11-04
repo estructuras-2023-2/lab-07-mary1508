@@ -1,5 +1,5 @@
-#ifndef student_file.h
-#define student_file.h
+#ifndef student_file_h
+#define student_file_h
 
 #include <vector>
 #include <deque>
