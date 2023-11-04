@@ -8,3 +8,8 @@ vector<int> Torneo(vector<int> habilidades, int N, int K) {
         int oponente = cola.front();
         cola.pop_front();
 
+        if (ganador < oponente) {
+            swap(ganador, oponente);
+            ganador_victorias_consecutivas = 0;
+        }
+
