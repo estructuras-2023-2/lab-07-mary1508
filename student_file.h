@@ -1,3 +1,9 @@
+#ifndef student_file.h
+#define student_file.h
+
+#include <vector>
+#include <deque>
+
 vector<int> Torneo(vector<int> habilidades, int N, int K) {
     deque<int> cola(habilidades.begin(), habilidades.end());
     int ganador_victorias_consecutivas = 0;
